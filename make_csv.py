@@ -1,8 +1,6 @@
 import requests
 import csv
 
-
-
 #url을 통하여 json 형식의 데이터를 받아온다.
 def get_json_data(url) :
     response = requests.get(url)
@@ -44,7 +42,6 @@ table = "722Y001" #통계표코드
 item = "0101000"
 
 url = "https://ecos.bok.or.kr/api/" + service_name + "/" + key + "/" + data_type + "/" + language + "/" + request_start + "/" + request_finish + "/" + table + "/" + get_data_time + "/" + search_first_time + "/" + search_second_time + "/" + item
-
 
 
 data = get_json_data (url)
